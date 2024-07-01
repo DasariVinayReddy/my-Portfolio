@@ -47,7 +47,7 @@ const Contact = () => {
     const { name, phone, email, subject, message } = formData;
 
     try {
-      const response = await fetch("http://localhost:8010/api/sendmail", {
+      const response = await fetch("http://localhost:8000/api/sendmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
