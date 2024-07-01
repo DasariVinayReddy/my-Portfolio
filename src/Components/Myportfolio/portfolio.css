@@ -1,0 +1,16 @@
+.portfolio {
+    background-color: #ECF0F3;
+}
+
+.portfolio-text {
+    color: #3B3E41;
+}
+
+.portfolio-name {
+    color: #FF004F;
+}
+
+.portfolio-card {
+    background: linear-gradient(156deg, rgba(236, 240, 243, 1) 59%, rgba(255, 255, 255, 1) 88%), rgb(236, 240, 243);
+    box-shadow: 0 2px 8px rgba(99, 99, 99, 0.2);
+}

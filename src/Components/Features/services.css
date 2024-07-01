@@ -1,0 +1,33 @@
+.what {
+    background-color: #ECF0F3;
+}
+
+.what-text {
+    color: #3B3E41;
+}
+
+.what-features {
+    color: #FF004F;
+}
+
+.what-card {
+    background: rgb(236, 240, 243);
+    background: linear-gradient(156deg, rgba(236, 240, 243, 1) 59%, rgba(255, 255, 255, 1) 88%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.what-card:hover {
+    color: white;
+    background: linear-gradient(0deg, rgba(141, 102, 184, 0.6) 0%, rgba(255, 0, 79, 0.7) 100%), rgba(141, 102, 184, 0.6);
+}
+
+
+@media (min-width: 577px) and (max-width: 779px) {
+
+    .what-do {
+        margin-top: 350px;
+        margin-left: 10px;
+    }
+
+    /* Your CSS styles for viewport widths between 500px and 760px */
+}

@@ -1,0 +1,30 @@
+.Nav {
+    /* width: 100%; */
+    background-color: #ECF0F3;
+    border-bottom: 0.1px solid rgba(128, 128, 128, 0.5);
+
+}
+
+.Navbar:hover {
+    color: red;
+}
+
+.dvr {
+    margin-left: 10px;
+    font-size: large;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 500px) and (max-width: 779px) {
+    .Navbar {
+        visibility: hidden;
+    }
+
+    .menu00 {
+        visibility: visible;
+    }
+
+    /* Your CSS styles for viewport widths between 500px and 760px */
+}

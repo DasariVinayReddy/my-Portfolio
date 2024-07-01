@@ -1,0 +1,282 @@
+.container3 {
+    max-height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(max-content, 2fr);
+    background-color: #ECF0F3;
+}
+
+.hero_title {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.vinay_title {
+    font-size: 3rem;
+    color: #FF004F;
+}
+
+.section__image {
+    margin-top: -39px;
+    /* Move the image to the top in mobile view */
+}
+
+
+.container1 {
+    background-color: #ECF0F3;
+}
+
+.hero {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.hero_welcome {
+    grid-row-start: 2;
+    font-size: 2rem;
+}
+
+.hero_skill {
+    grid-row-start: 3;
+    margin-top: 80px;
+    font-size: 1rem;
+}
+
+.best_skill_icons {
+    margin-top: 30px;
+}
+
+.best_skill {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+
+/* Small screens (up to 576px) */
+@media (max-width: 576px) {
+    .vinay_title {
+        font-size: 2.4rem;
+        color: #FF004F;
+    }
+
+    .hero_welcome {
+        margin-left: 30px;
+    }
+
+    .container3 {
+        max-height: 200vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(max-content, 2fr);
+    }
+
+    .hero {
+        grid-row: 2;
+        margin-top: -120px;
+    }
+
+    .best_skill_icons {
+        margin-top: 30px;
+    }
+
+    .best_skill {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+    }
+
+    .hero_skill {
+        margin-left: 30px;
+        grid-row-start: 3;
+        font-size: 1rem;
+    }
+}
+
+/* Medium screens (577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .container3 {
+        max-height: 150vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #ECF0F3;
+    }
+
+    .vinay_title {
+        font-size: 2rem;
+        color: #FF004F;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+
+    }
+
+    .hero {
+        grid-row: 2;
+        margin-top: 100px;
+    }
+
+    .hero_welcome {
+        margin: auto;
+    }
+
+    .best_skill_icons {
+        margin-top: 30px;
+    }
+
+    .best_skill {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+    }
+
+
+
+}
+
+/* Large screens (769px and above) */
+@media (min-width: 769px) {
+    .container3 {
+        max-height: 150vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(max-content, 1fr);
+        background-color: #ECF0F3;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section__image {
+        order: 2;
+        /* Reset the order for larger screens */
+    }
+}
+
+
+@media (min-width: 768px) {
+    .hero_welcome {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium screens (769px to 1023px) */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .container3 {
+        max-height: 250vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(max-content, 2fr);
+        background-color: #ECF0F3;
+    }
+
+    .vinay_title {
+        font-size: 2.8rem;
+    }
+
+    .vinay_sub {
+        width: 30ch;
+        /* Adjust width based on text length */
+    }
+
+    .hero_welcome {
+        font-size: 2.8rem;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-rows: minmax(max-content, 1fr);
+    }
+
+    .hero_welcome {
+        grid-row-start: 1;
+        font-size: 2rem;
+    }
+
+    .section {
+        display: grid;
+        margin: auto;
+    }
+
+    .hero {
+        grid-row: 2;
+        margin-top: 100px;
+    }
+
+    .hero_welcome {
+        margin: auto;
+    }
+
+    .best_skill_icons {
+        margin-top: 30px;
+    }
+
+    .best_skill {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+    }
+
+    .hero_skill {
+        margin: auto;
+    }
+}
+
+/* Large screens (1024px to 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .container3 {
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .vinay_title {
+        font-size: 2.4rem;
+    }
+
+    .vinay_sub {
+        width: 35ch;
+        /* Adjust width based on text length */
+    }
+
+    .hero_welcome {
+        font-size: 2rem;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-rows: minmax(max-content, 1fr) 1fr;
+    }
+
+    .hero_welcome {
+        grid-row-start: 2;
+        margin: 20px;
+        font-size: 2rem;
+    }
+
+    .hero_skill {
+        grid-row-start: 3;
+        margin: 20px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 779px) {
+    .hero {
+        display: grid;
+        grid-template-rows: minmax(max-content, 1fr);
+    }
+
+    .hero_skill {
+        margin: auto;
+    }
+
+    /* Your CSS styles for viewport widths between 500px and 760px */
+}

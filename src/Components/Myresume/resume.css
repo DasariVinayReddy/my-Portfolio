@@ -1,0 +1,61 @@
+.custom-background {
+    color: #FF004F;
+    background: linear-gradient(156deg, rgba(236, 240, 243, 1) 59%, rgba(255, 255, 255, 1) 88%), rgb(236, 240, 243);
+    box-shadow: 0 2px 8px rgba(99, 99, 99, 0.2);
+}
+
+.education {
+    font-size: 34px;
+    color: hwb(220 12% 86%);
+    font-weight: 600;
+}
+
+.resume-card {
+    height: 250px;
+    padding: 30px;
+    background: linear-gradient(156deg, rgba(236, 240, 243, 1) 59%, rgba(255, 255, 255, 1) 88%), rgb(236, 240, 243);
+    box-shadow: 0 2px 10px rgba(99, 99, 99, 0.5);
+}
+
+.resume-card:hover {
+    background: linear-gradient(0deg, rgba(141, 102, 184, 0.6) 0%, rgba(255, 0, 79, 0.7) 100%), rgba(141, 102, 184, 0.6);
+}
+
+.resume-card:hover .score_1 {
+    color: white;
+}
+
+
+.score {
+    padding: 10px;
+    color: #FF004F;
+    background: linear-gradient(156deg, rgba(236, 240, 243, 1) 59%, rgba(255, 255, 255, 1) 88%), rgb(236, 240, 243);
+    box-shadow: 0 2px 10px rgba(99, 99, 99, 0.6);
+}
+
+.progess {
+    width: 500px;
+    height: 10px;
+}
+
+/* Styles for small screens */
+@media (max-width: 640px) {
+    .resume-card:hover .score {
+        color: white;
+        background: #FF004F;
+    }
+
+
+
+    .resume-card {
+        height: max-content;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .resume-card {
+        height: max-content;
+        text-align: justify;
+    }
+}
