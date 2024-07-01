@@ -47,13 +47,16 @@ const Contact = () => {
     const { name, phone, email, subject, message } = formData;
 
     try {
-      const response = await fetch("http://localhost:8000/api/sendmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, phone, subject, message }),
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_HOST}/api/sendmail`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, phone, subject, message }),
+        }
+      );
 
       if (response.ok) {
         const responseData = await response.json();
