@@ -61,7 +61,6 @@ const Contact = () => {
         const responseData = await response.json();
         console.log("Email sent!", responseData);
         setAlertMessage("Email sent successfully!");
-        setAlertType("success");
         setFormData({
           name: "",
           phone: "",
@@ -70,10 +69,12 @@ const Contact = () => {
           message: "",
           formSubmitted: true,
         });
-        console.log("Email sent!", responseData);
+        setAlertType("success");
+
+        // console.log("Email sent!", responseData);
         setFormData((prevState) => ({ ...prevState, formSubmitted: true }));
       } else {
-        console.log("Email not sent. Status:", response.status);
+        // console.log("Email not sent. Status:", response.status);
         setAlertMessage("Failed to send email. Please try again later.");
         setAlertType("error");
       }
