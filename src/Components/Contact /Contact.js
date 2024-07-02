@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Hands from "./../../asstes/portfolio/hands.png";
 import "./contact.css";
-// import axios from "axios";
 
 const Contact = () => {
   const [error1, setError1] = useState("");
