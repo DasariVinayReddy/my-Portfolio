@@ -30,7 +30,7 @@ const Contact = () => {
     if (alertMessage) {
       timeout = setTimeout(() => {
         setAlertMessage("");
-      }, 5000); // 5000ms = 5 seconds
+      }, 2000); // 5000ms = 5 seconds
     }
 
     return () => clearTimeout(timeout);

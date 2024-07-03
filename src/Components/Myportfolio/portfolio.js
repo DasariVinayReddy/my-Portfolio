@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-
+import todo from "./../../asstes/portfolio/todo.jpg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import book from "./../../asstes/portfolio/books.jpg";
-import cenimatic from "./../../asstes/portfolio/cenimatic.jpg";
-import clinic from "./../../asstes/portfolio/1.jpg";
+import cenimatic from "./../../asstes/portfolio/cinematic.jpg";
+import clinic from "./../../asstes/portfolio/clinic.jpg";
+import ebook from "./../../asstes/portfolio/ebook.jpg";
 import store from "./../../asstes/portfolio/store.jpg";
 import "./portfolio.css";
 
@@ -37,7 +38,7 @@ export const Portfolio = () => {
             icon={
               <img
                 src={cenimatic}
-                className="rounded-[20px] object-cover"
+                className="w-full h-60 rounded-[20px] object-cover"
                 alt="Icon"
               />
             }
@@ -48,7 +49,7 @@ export const Portfolio = () => {
             icon={
               <img
                 src={clinic}
-                className="rounded-[20px] object-cover"
+                className="w-full h-60 rounded-[20px] object-cover"
                 alt="Icon"
               />
             }
@@ -59,7 +60,7 @@ export const Portfolio = () => {
             icon={
               <img
                 src={book}
-                className="rounded-[20px] object-cover"
+                className=" w-full h-60 rounded-[20px] object-cover"
                 alt="Icon"
               />
             }
@@ -70,7 +71,7 @@ export const Portfolio = () => {
             icon={
               <img
                 src={store}
-                className="rounded-[20px] object-cover"
+                className="w-full h-60 rounded-[20px] object-cover"
                 alt="Icon"
               />
             }
@@ -80,8 +81,8 @@ export const Portfolio = () => {
             details="E-Book E-Commerce Application using Reactjs Tailwindcss."
             icon={
               <img
-                src={cenimatic}
-                className="rounded-[20px] object-cover"
+                src={ebook}
+                className="w-full h-60 rounded-[20px] object-cover"
                 alt="Icon"
               />
             }
@@ -91,8 +92,8 @@ export const Portfolio = () => {
             details="Todo Application using reactjs tailwindcss."
             icon={
               <img
-                src={cenimatic}
-                className="rounded-[20px] object-cover"
+                src={todo}
+                className=" w-full h-60 rounded-[20px] object-cover"
                 alt="Icon"
               />
             }
@@ -127,7 +128,13 @@ const ServiceCard = ({ icon, details, url }) => {
           animate={control}
         >
           <motion.div>
-            <div className="mb-8 flex  bg-white  rounded-[20px] items-center justify-center">
+            <div
+              className="mb-8 flex bg-white rounded-[20px] items-center justify-center transition-transform duration-300 hover:scale-110 hover:z-10"
+              style={{
+                transformOrigin: "center",
+                transform: "scale(1)",
+              }}
+            >
               {icon}
             </div>
             <a
