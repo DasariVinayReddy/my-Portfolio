@@ -91,22 +91,18 @@ const Contact = () => {
     const { name, phone, email, subject, message } = formData;
 
     // Check if name is defined before accessing its properties
-    if (name) {
-      const hasSymbols = /[!@#$%^&*(),.?":{}|<>]/g.test(name);
-      const hasNumbers = /\d/g.test(name);
 
-      if (hasSymbols) {
-        setError("Name should not contain symbols");
-        return false;
-      } else if (hasNumbers) {
-        setError("Name should not contain numbers");
-        return false;
-      } else {
-        setError("");
-      }
-    } else {
-      setError("Name is required");
+    const hasSymbols = /[!@#$%^&*(),.?":{}|<>]/g.test(name);
+    const hasNumbers = /\d/g.test(name);
+
+    if (hasSymbols) {
+      setError("Name should not contain symbols");
       return false;
+    } else if (hasNumbers) {
+      setError("Name should not contain numbers");
+      return false;
+    } else {
+      setError("");
     }
 
     // Check if phone is defined before accessing its length
@@ -118,22 +114,18 @@ const Contact = () => {
     }
 
     // Check if email is defined before accessing its properties
-    if (email) {
-      if (email.length > 50) {
-        setError2("Email should not exceed 50 characters");
+
+    if (email.length > 50) {
+      setError2("Email should not exceed 50 characters");
+      return false;
+    } else {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        setError2("Invalid email format");
         return false;
       } else {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-          setError2("Invalid email format");
-          return false;
-        } else {
-          setError2("");
-        }
+        setError2("");
       }
-    } else {
-      setError2("Email is required");
-      return false;
     }
 
     // Check if subject is defined before accessing its length
