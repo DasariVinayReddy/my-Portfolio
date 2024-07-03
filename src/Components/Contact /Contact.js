@@ -179,19 +179,21 @@ const Contact = () => {
               className="rounded-3xl transition-all duration-500 hover:scale-105 hover:-translate-y-1"
             />
           </div>
-          <div className="flex  text-2xl mt-10 font-bold text-[233,237,245] mb-4 ml-2">
+          <div className="flex justify-center items-center text-2xl mt-10 font-bold text-[233,237,245] mb-4 ml-2">
             Dasari Vinay Reddy
           </div>
-          <p className="text-gray-500 mb-10 ml-2">Software Engineer</p>
-          <p className="text-gray-700 mb-8 ml-2">
+          <p className="text-center text-gray-500 mb-10 ml-2">
+            Software Engineer
+          </p>
+          <p className="text-center text-gray-700 mb-8 ml-2">
             I am available for freelance work. Connect with me via and call in
             to my account.
           </p>
-          <p className="text-container mb-3 ml-2">
+          <p className=" phone-container mb-3 ml-2">
             Phone : +91 7799262831
             <span className="underline"></span>
           </p>
-          <p className="text-container ml-2">
+          <p className=" phone-container ml-2">
             Email : rvinay968@gmail.com
             <span className="underline"></span>
           </p>

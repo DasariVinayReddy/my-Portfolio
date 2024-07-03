@@ -10,20 +10,21 @@
     background: linear-gradient(0deg, rgba(141, 102, 184, 0.6) 0%, rgba(255, 0, 79, 0.7) 100%), rgba(141, 102, 184, 0.6);
 }
 
-.text-container {
+.phone-container {
     display: inline-block;
     position: relative;
     color: #4b5563;
+
     /* Gray-700 color */
     transition: color 0.3s ease-in-out;
 }
 
-.text-container:hover {
+.phone-container:hover {
     color: #FF004F;
     /* Gray-900 color */
 }
 
-.text-container:hover .underline {
+.phone-container:hover .underline {
     width: 100%;
 
     background-color: #FF004F;
