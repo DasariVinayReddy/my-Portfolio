@@ -35,6 +35,7 @@ const Contact = () => {
 
     return () => clearTimeout(timeout);
   }, [alertMessage]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -58,8 +59,6 @@ const Contact = () => {
       );
 
       if (response.ok) {
-        const responseData = await response.json();
-        console.log("Email sent!", responseData);
         setAlertMessage("Email sent successfully!");
         setFormData({
           name: "",
@@ -70,20 +69,14 @@ const Contact = () => {
           formSubmitted: true,
         });
         setAlertType("success");
-
-        // console.log("Email sent!", responseData);
-        setFormData((prevState) => ({ ...prevState, formSubmitted: true }));
       } else {
-        // console.log("Email not sent. Status:", response.status);
         setAlertMessage("Failed to send email. Please try again later.");
         setAlertType("error");
       }
     } catch (error) {
-      console.error("Error sending email:", error);
       setAlertMessage("An error occurred while sending the email.");
       setAlertType("error");
     }
-    setFormData("");
   };
 
   // Validation function
