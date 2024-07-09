@@ -35,7 +35,7 @@ export const Resume = () => {
           <div className="w-full px-4">
             <div className=" mb-12 text-center mx-auto max-w-[510px] item-center lg:mb-20 ">
               <span className="mb-2 block text-lg font-semibold portfolio-name">
-                3+ Years Experience
+                1+ Year Experience
               </span>
               <h2 className="text-5xl portfolio-text">My Resume</h2>
             </div>
