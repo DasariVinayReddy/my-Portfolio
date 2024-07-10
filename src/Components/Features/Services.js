@@ -38,27 +38,27 @@ export const Services = () => {
           />
           <ServiceCard
             title="UI/UX Designer"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            details="UI/UX design services encompass a comprehensive approach to creating intuitive, engaging,effective  experiences"
             icon={<img src={uiux} alt="!" />}
           />
           <ServiceCard
             title="Figma"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            details="Figma design services expert creation and optimization of digital interfaces using this powerful collaborative tool."
             icon={<img src={figma} alt="!" />}
           />
           <ServiceCard
             title="Illustrator"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            details="Illustrator services bring your ideas to life through vibrant visuals and captivating artwork."
             icon={<img src={Ai} alt="!" />}
           />
           <ServiceCard
             title="AWS DevOps"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            details="AWS DevOps services integrate development,software delivery the Amazon Web Services platform."
             icon={<img src={devops} alt="!" />}
           />
           <ServiceCard
             title="Can learn any technology"
-            details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
+            details="Our comprehensive technology learning services empower individuals and teams to master any tech skill."
             icon={<img src={techno} alt="!" />}
           />
         </div>
