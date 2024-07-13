@@ -5,7 +5,7 @@ const acheivements = [
   {
     id: 1,
     title: "THE BRAINIAC ",
-    description: "THE BEST PERFORMER IN RISPOSTA.",
+    description: "THE BEST PERFORMER.",
   },
 ];
 
