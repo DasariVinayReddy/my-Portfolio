@@ -1,5 +1,5 @@
 import img from "../../asstes/vinay1.png";
-import Doc from "../../asstes/documentation/DasariVinayReddy-doc.pdf";
+import Documentation from "../../asstes/documentation/DasariVinayReddy-doc.pdf";
 export const Footer = () => {
   return (
     <div className="portfolio">
@@ -94,7 +94,10 @@ export const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a href={Doc} className=" text-gray-600 hover:text-gray-900">
+                  <a
+                    href={Documentation}
+                    className=" text-gray-600 hover:text-gray-900"
+                  >
                     Documentation
                   </a>
                 </li>
