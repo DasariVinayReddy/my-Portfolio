@@ -1,4 +1,5 @@
 import img from "../../asstes/vinay1.png";
+import Doc from "../../asstes/documentation/DasariVinayReddy-doc.pdf";
 export const Footer = () => {
   return (
     <div className="portfolio">
@@ -93,7 +94,7 @@ export const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a href="!" className=" text-gray-600 hover:text-gray-900">
+                  <a href={Doc} className=" text-gray-600 hover:text-gray-900">
                     Documentation
                   </a>
                 </li>
@@ -137,8 +138,7 @@ export const Footer = () => {
           <div className="py-7 border-t border-gray-200">
             <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
               <span className="text-sm text-gray-500 ">
-                ©<a href="https://pagedone.io/">DASARI VINAY REDDY</a> 2024, All
-                rights reserved.
+                ©<a href="!">DASARI VINAY REDDY</a> 2024, All rights reserved.
               </span>
               <ul className="flex items-center gap-9 mt-4 lg:mt-0">
                 <li>
