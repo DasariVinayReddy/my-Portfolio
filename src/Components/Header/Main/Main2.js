@@ -85,8 +85,9 @@ export const Section = () => {
               <ReactTyped
                 strings={[
                   "I'm a Front-end Developer",
-                  "I Love UI/UX Desiger",
-                  "DevOps",
+                  "I Love UI/UX Desiger(Figma)",
+                  "DevOps CI/CD",
+                  "Ethical Hacker",
                 ]}
                 typeSpeed={150}
                 backSpeed={100}

@@ -7,6 +7,7 @@ import cenimatic from "./../../asstes/portfolio/cinematic.jpg";
 import clinic from "./../../asstes/portfolio/clinic.jpg";
 import ebook from "./../../asstes/portfolio/ebook.jpg";
 import store from "./../../asstes/portfolio/store.jpg";
+import vinayproject from "./../../asstes/portfolio/vinayproject.jpg";
 import "./portfolio.css";
 
 const boxVariant = {
@@ -19,8 +20,45 @@ const boxVariant = {
 };
 
 export const Portfolio = () => {
+  const services = [
+    {
+      details: "Cinematic Application Development using Reactjs",
+      icon: cenimatic,
+      url: "https://cinematic-vinay.netlify.app/",
+    },
+    {
+      details: "Clinic website using React.js and Tailwind CSS framework.",
+      icon: clinic,
+      url: "https://clinic-site-vinayreddy.netlify.app/",
+    },
+    {
+      details: "E-Book E-Commerce Design Creativity & Application.",
+      icon: book,
+      url: "https://e-commerce-beta-khaki.vercel.app/",
+    },
+    {
+      details: "Website using React.js and frameworks using Tailwind CSS.",
+      icon: store,
+      url: "https://cinematic-vinay.netlify.app/",
+    },
+    {
+      details: "E-Book E-Commerce Application using React.js & Tailwind CSS.",
+      icon: ebook,
+      url: "https://codebook-nine.vercel.app/",
+    },
+    {
+      details: "Todo Application using React.js & Tailwind CSS.",
+      icon: todo,
+      url: "https://vinay86-todomate-projects.netlify.app/",
+    },
+    {
+      details: "My Portfolio Done by Me.",
+      icon: vinayproject,
+      url: "https://dasarivinayreddy.netlify.app/",
+    },
+  ];
   return (
-    <section className="pb-12 pt-20 portfolio dark:bg-dark lg:pb-[90px] lg:pt-[120px] ">
+    <section className="pb-12 pt-20 portfolio dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="-mx-4 flex  flex-wrap">
           <div className="w-full px-4">
@@ -28,77 +66,27 @@ export const Portfolio = () => {
               <span className="mb-2 block text-lg font-semibold portfolio-name">
                 VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
               </span>
-              <h2 className="text-5xl portfolio-text">My Portfolio</h2>
+              <h2 className="text-5xl portfolio-text" id="Portfolio">
+                My Portfolio
+              </h2>
             </div>
           </div>
         </div>
         <div className="-mx-4 flex flex-wrap">
-          <ServiceCard
-            details="Cinematic Application Development using Reactjs"
-            icon={
-              <img
-                src={cenimatic}
-                className="w-full h-60 rounded-[20px] object-cover"
-                alt="Icon"
-              />
-            }
-            url="https://cinematic-vinay.netlify.app/"
-          />
-          <ServiceCard
-            details="Clinic website using reactjs and tailwindcss framework. "
-            icon={
-              <img
-                src={clinic}
-                className="w-full h-60 rounded-[20px] object-cover"
-                alt="Icon"
-              />
-            }
-            url="https://clinic-site-vinayreddy.netlify.app/"
-          />
-          <ServiceCard
-            details="E-Book E-Commerce Design Creativity & Application."
-            icon={
-              <img
-                src={book}
-                className=" w-full h-60 rounded-[20px] object-cover"
-                alt="Icon"
-              />
-            }
-            url="https://e-commerce-beta-khaki.vercel.app/"
-          />
-          <ServiceCard
-            details="website using reactjs and frameworks using tailwindcss"
-            icon={
-              <img
-                src={store}
-                className="w-full h-60 rounded-[20px] object-cover"
-                alt="Icon"
-              />
-            }
-            url="https://cinematic-vinay.netlify.app/"
-          />
-          <ServiceCard
-            details="E-Book E-Commerce Application using Reactjs Tailwindcss."
-            icon={
-              <img
-                src={ebook}
-                className="w-full h-60 rounded-[20px] object-cover"
-                alt="Icon"
-              />
-            }
-            url="https://codebook-nine.vercel.app/"
-          />
-          <ServiceCard
-            details="Todo Application using reactjs tailwindcss."
-            icon={
-              <img
-                src={todo}
-                className=" w-full h-60 rounded-[20px] object-cover"
-                alt="Icon"
-              />
-            }
-            url="https://vinay86-todomate-projects.netlify.app/"
-          />
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              details={service.details}
+              icon={
+                <img
+                  src={service.icon}
+                  className="w-full h-60 rounded-[20px] object-cover"
+                  alt="Icon"
+                />
+              }
+              url={service.url}
+            />
+          ))}
         </div>
       </div>
     </section>

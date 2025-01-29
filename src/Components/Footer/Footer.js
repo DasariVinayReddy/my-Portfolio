@@ -45,7 +45,7 @@ export const Footer = () => {
 
                 <li>
                   <a href="!" className=" text-gray-600 hover:text-gray-900">
-                    Portfolio
+                    Myportfolio
                   </a>
                 </li>
               </ul>
@@ -85,16 +85,6 @@ export const Footer = () => {
               </h4>
               <ul className="text-sm  transition-all duration-500">
                 <li className="mb-6">
-                  <a href="!" className="text-gray-600 hover:text-gray-900">
-                    FAQs
-                  </a>
-                </li>
-                <li className="mb-6">
-                  <a href="!" className=" text-gray-600 hover:text-gray-900">
-                    Quick Start
-                  </a>
-                </li>
-                <li className="mb-6">
                   <a
                     href={Documentation}
                     className=" text-gray-600 hover:text-gray-900"
@@ -102,11 +92,7 @@ export const Footer = () => {
                     Documentation
                   </a>
                 </li>
-                <li>
-                  <a href="!" className=" text-gray-600 hover:text-gray-900">
-                    User Guide
-                  </a>
-                </li>
+                <li></li>
               </ul>
             </div>
             {/* <!--End Col--> */}
@@ -115,26 +101,10 @@ export const Footer = () => {
                 Blogs
               </h4>
               <ul className="text-sm  transition-all duration-500">
-                <li className="mb-6">
-                  <a href="!" className="text-gray-600 hover:text-gray-900">
-                    News
-                  </a>
-                </li>
-                <li className="mb-6">
-                  <a href="!" className=" text-gray-600 hover:text-gray-900">
-                    Tips & Tricks
-                  </a>
-                </li>
-                <li className="mb-6">
-                  <a href="!" className=" text-gray-600 hover:text-gray-900">
-                    New Updates
-                  </a>
-                </li>
-                <li>
-                  <a href="!" className=" text-gray-600 hover:text-gray-900">
-                    Events
-                  </a>
-                </li>
+                <li className="mb-6"></li>
+                <li className="mb-6"></li>
+                <li className="mb-6"></li>
+                <li></li>
               </ul>
             </div>
           </div>
@@ -144,23 +114,6 @@ export const Footer = () => {
               <span className="text-sm text-gray-500 ">
                 ©<span>DASARI VINAY REDDY</span> 2024, All rights reserved.
               </span>
-              <ul className="flex items-center gap-9 mt-4 lg:mt-0">
-                <li>
-                  <a href="!" className="text-sm ">
-                    Terms
-                  </a>
-                </li>
-                <li>
-                  <a href="!" className="text-sm text-gray-500">
-                    Privacy
-                  </a>
-                </li>
-                <li>
-                  <a href="!" className="text-sm text-gray-500">
-                    Cookies
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
