@@ -8,6 +8,7 @@ import clinic from "./../../asstes/portfolio/clinic.jpg";
 import ebook from "./../../asstes/portfolio/ebook.jpg";
 import store from "./../../asstes/portfolio/store.jpg";
 import vinayproject from "./../../asstes/portfolio/vinayproject.jpg";
+import Fusion from "../../asstes/portfolio/fusion.png";
 import "./portfolio.css";
 
 const boxVariant = {
@@ -21,6 +22,11 @@ const boxVariant = {
 
 export const Portfolio = () => {
   const services = [
+    {
+      details: "FusionOverseas Consultancy.",
+      icon: Fusion,
+      url: "https://www.fusionoverseashyd.com/",
+    },
     {
       details: "Cinematic Application Development using Reactjs",
       icon: cenimatic,
